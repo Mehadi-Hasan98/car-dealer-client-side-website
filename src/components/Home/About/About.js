@@ -25,7 +25,7 @@ const About = () => {
             <div className='d-flex col-12 mt-5 fw-bold'>
                 <div className='mx-auto'>
                 <h4><FaCar/> ALL BRANDS</h4>
-                <p>More than 100 brands</p>
+                 <p>More than 100 brands</p>
                 </div>
                 <div className='mx-auto'>
                 <h4><BiSupport/> FULL SUPPORT</h4>
