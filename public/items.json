@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "WEEDING PHOTOGRAPHY",
+        "price": "500",
+        "description": "There's nothing more incredible than finding the one person you can't live without. Your true best friend. You two are on the fire together.",
+        "img": "https://i.ibb.co/HDDHm7r/weeding1.png"
+    },
+    {
+        "id": 2,
+        "name": "SPORTS PHOTOGRAPHY",
+        "price": "800",
+        "description": "Sports photography is a type of photography that covers every sport and sporting event, capturing the action of a game and behind the scenes of the players.",
+        "img": "https://i.ibb.co/vP5YDfX/sports.png"
+    },
+    {
+        "id": 3,
+        "name": "WILD PHOTOGRAPHY",
+        "price": "350",
+        "description": "Wild Photography intends to spread the love for Wildlife and Nature.We contribute to wildlife conservation through wildlife photography",
+        "img": "https://i.ibb.co/g65mFzD/groom-putting-ring-bride-s-finger-1.png"
+    }
+]
