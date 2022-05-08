@@ -1,44 +1,56 @@
 [
     {
         "id": 1,
-        "name": "WEEDING PHOTOGRAPHY",
-        "price": "500",
-        "description": "There's nothing more incredible than finding the one person you can't live without. Your true best friend. You two are on the fire together.",
-        "img": "https://i.ibb.co/HDDHm7r/weeding1.png"
+        "name": "BMW",
+        "price": "200000",
+        "description": "This is Brand new BMW car. It is our latest collection from BMW. Best for family members",
+        "img": "https://i.ibb.co/jJ5cHtx/car1.png",
+        "quantity": "6",
+        "supplier": "BMW"
     },
     {
         "id": 2,
-        "name": "SPORTS PHOTOGRAPHY",
-        "price": "800",
-        "description": "Sports photography is a type of photography that covers every sport and sporting event, capturing the action of a game and behind the scenes of the players.",
-        "img": "https://i.ibb.co/vP5YDfX/sports.png"
+        "name": "MAZDA",
+        "price": "80000",
+        "description": "This is Brand new Mazda car. It is our latest collection from Mazda. Best for family members.",
+        "img": "https://i.ibb.co/PcQSCV9/car2.png",
+        "quantity": "4",
+        "supplier": "MAZDA"
     },
     {
         "id": 3,
-        "name": "WILD PHOTOGRAPHY",
-        "price": "350",
-        "description": "Wild Photography intends to spread the love for Wildlife and Nature.We contribute to wildlife conservation through wildlife photography",
-        "img": "https://i.ibb.co/g65mFzD/groom-putting-ring-bride-s-finger-1.png"
+        "name": "TOYOTA",
+        "price": "35000",
+        "description": "This is Brand new Toyota car. It is our latest collection from Toyota. Best for family members.",
+        "img": "https://i.ibb.co/5kYWbYv/car3.png",
+        "quantity": "8",
+        "supplier": "TOYOTA"
     },
     {
         "id": 4,
-        "name": "WEEDING PHOTOGRAPHY",
-        "price": "500",
-        "description": "There's nothing more incredible than finding the one person you can't live without. Your true best friend. You two are on the fire together.",
-        "img": "https://i.ibb.co/HDDHm7r/weeding1.png"
+        "name": "PAJERO",
+        "price": "60000",
+        "description": "This is Brand new Pajero car. It is our latest collection from Pajero. Best for family members.",
+        "img": "https://i.ibb.co/88YyX9p/car4.png",
+        "quantity": "10",
+        "supplier": "PAJERO"
     },
     {
         "id": 5,
-        "name": "SPORTS PHOTOGRAPHY",
-        "price": "800",
-        "description": "Sports photography is a type of photography that covers every sport and sporting event, capturing the action of a game and behind the scenes of the players.",
-        "img": "https://i.ibb.co/vP5YDfX/sports.png"
+        "name": "TOYOTA",
+        "price": "40000",
+        "description": "This is Brand new Toyota car. It is our latest collection from Toyota. Best for family members.",
+        "img": "https://i.ibb.co/1Xx4Twn/car5.png",
+        "quantity": "12",
+        "supplier": "TOYOTA"
     },
     {
         "id": 6,
-        "name": "WILD PHOTOGRAPHY",
-        "price": "350",
-        "description": "Wild Photography intends to spread the love for Wildlife and Nature.We contribute to wildlife conservation through wildlife photography",
-        "img": "https://i.ibb.co/g65mFzD/groom-putting-ring-bride-s-finger-1.png"
+        "name": "VINTAGE",
+        "price": "35000",
+        "description": "This is Vintage car. It is our oldest collection. Best for vintage lover",
+        "img": "https://i.ibb.co/vxPHNpY/car6.png",
+        "quantity": "5",
+        "supplier": "VINTAGE"
     }
 ]
