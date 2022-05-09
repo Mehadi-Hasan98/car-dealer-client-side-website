@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
 import useManageInventory from '../../hooks/useManageInventory';
 
 const InventoryShow = ({item}) => {
     const [items, setItems] = useManageInventory();
-    const [Refresh, setRefresh] = React.useState(false);
+    // const [Refresh, setRefresh] = React.useState(false);
     const handleDelete = id =>{
-        setRefresh(!Refresh);
+        // setRefresh(!Refresh);
         const proceed = window.confirm('Are You Sure?');
         if(proceed){
             const url = `http://localhost:5000/item/${id}`;
