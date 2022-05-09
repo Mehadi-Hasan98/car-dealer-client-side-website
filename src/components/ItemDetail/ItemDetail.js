@@ -58,7 +58,7 @@ const ItemDetail = () => {
       
   
       // send data to the monogod server and update
-      const url = `http://localhost:5000/item/${id}`
+      const url = `https://fierce-eyrie-19120.herokuapp.com/item/${id}`
       await axios.put(url, newQuantity).then((response) => {
         const { data } = response;
         if (data) {
