@@ -1,9 +1,13 @@
 import { Card, ListGroup, ListGroupItem } from 'react-bootstrap';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import useItemDetail from '../../hooks/useItemDetail';
 
 
 const ItemDetail = () => {
+    const navigate = useNavigate();
+    const navigateToInventory = id => {
+        navigate('/inventory')
+    }
     const {itemId} = useParams();
     const [item] = useItemDetail(itemId);
     return (
@@ -26,6 +30,7 @@ const ItemDetail = () => {
     <button className='btn btn-primary'>Delivered</button>
   </Card.Body>
 </Card>
+<button className='btn btn-primary mt-4' onClick={()=> navigateToInventory()}>Manage Inventories</button>
         <div className='mt-5'>
             <input type="text" placeholder='Enter Quantity Number'/>
             <button style={{bgcolor: "blue"}} className='ms-3'>Restock</button>

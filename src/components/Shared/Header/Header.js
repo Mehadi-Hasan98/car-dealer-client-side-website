@@ -22,14 +22,16 @@ const Header = () => {
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className='ms-auto'>
       <Nav.Link as={Link} to="home">Home</Nav.Link>
-      <Nav.Link as={Link} to="blogs">Blogs</Nav.Link>
+      
       {
         user && <>
+        <Nav.Link as={Link} to="inventory">Manage Inventory</Nav.Link>
         <Nav.Link as={Link} to="additem">Add Items</Nav.Link>
-        <Nav.Link as={Link} to="manage">Manage Items</Nav.Link>
         <Nav.Link as={Link} to="myitem">My Items</Nav.Link>
         </>
       }
+      <Nav.Link as={Link} to="blogs">Blogs</Nav.Link>
+      <Nav.Link as={Link} to="aboutus">About Us</Nav.Link>
       {
         user ?
         <button className='btn btn-link text-white text-decoration-none' onClick={handleSignOut}>Sign out</button>

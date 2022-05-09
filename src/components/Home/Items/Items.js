@@ -4,10 +4,6 @@ import Item from '../Item/Item';
 import './Items.css';
 
 const Items = () => {
-    const navigate = useNavigate();
-    const navigateToInventory = id => {
-        navigate('/inventory')
-    }
     const [items, setItems] = useState([]);
 
     useEffect( () =>{
@@ -18,7 +14,7 @@ const Items = () => {
 
     return (
         <div className='mt-5 mb-5'>
-            <h2 className='mt-5 mb-5'>Inventory Items</h2>
+            <h2 className='text-center mt-5 mb-5'>Inventory Items</h2>
            <div className='items-container'>
            {
                 items.slice(0, 6).map(item => <Item
@@ -27,7 +23,6 @@ const Items = () => {
                 ></Item>)
             }
            </div>
-           <button className='btn btn-primary' onClick={()=> navigateToInventory()}>Manage Inventories</button>
         </div>
     );
 };

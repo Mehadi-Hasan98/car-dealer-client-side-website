@@ -13,6 +13,7 @@ import ManageItems from './components/ManageItems/ManageItems';
 import ItemDetail from './components/ItemDetail/ItemDetail';
 import MyItems from './components/MyItems/MyItems';
 import Inventory from './components/Inventory/Inventory';
+import AboutUs from './components/AboutUs/AboutUs';
 
 function App() {
   return (
@@ -27,9 +28,7 @@ function App() {
           </RequireAuth>
         }></Route>
         <Route path='/inventory' element={
-          <RequireAuth>
-            <Inventory></Inventory>
-          </RequireAuth>
+          <Inventory></Inventory>
         }></Route>
         <Route path='/additem' element={
           <RequireAuth>
@@ -49,6 +48,7 @@ function App() {
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
+        <Route path='/aboutus' element={<AboutUs></AboutUs>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
      </Routes>
      <Footer></Footer>

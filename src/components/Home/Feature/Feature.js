@@ -9,7 +9,7 @@ import './Feature.css';
 
 const Feature = () => {
     return (
-        <div>
+        <div className='text-center'>
             <p>Check out our recent cars</p>
             <h2 className='mb-4'>Feature Cars</h2>
             <div className='d-flex ms-4 me-4 features-container'>
@@ -18,8 +18,7 @@ const Feature = () => {
   <Card.Body>
     <Card.Title>AUDI</Card.Title>
     <Card.Text>
-      Some quick example text to build on the card title and make up the bulk of
-      the card's content.
+      Audi 2019 A4
     </Card.Text>
   </Card.Body>
 </Card>
