@@ -1,10 +1,15 @@
 # Car Dealer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[Car Dealer live site link](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Website Details
 
-In the project directory, you can run:
+- This is a inventory website
+- 
+-
+-
+-
+-
 
 ### `npm start`
 

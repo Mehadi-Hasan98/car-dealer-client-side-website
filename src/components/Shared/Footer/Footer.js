@@ -10,7 +10,7 @@ const Footer = () => {
     const today = new Date();
     const year = today.getFullYear();
     return (
-        <div className='d-flex mt-5 border border-primary bg-dark pt-4'>
+        <div className='mt-5 border border-primary bg-dark pt-4 about-info'>
             <div className='mb-4'>
             <p className='ps-5 ms-4 footer'><small>Copyright © by </small> <span>Car Dealer {year}</span></p>
             <span className='me-2 ms-4 ps-5 footer'>

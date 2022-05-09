@@ -1,39 +1,39 @@
-import { async } from '@firebase/util';
-import { signOut } from 'firebase/auth';
 import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
-import { useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
+import InventoryShow from '../InventoryShow/InventoryShow';
 
 const MyItems = () => {
-    // const [user] = useAuthState(auth);
-    // const [items, setItems] = useState([]);
-    // const navigate = useNavigate();
-    // useEffect (() => {
-    //     const getItems = async () => {
-    //         const email = user.email;
-    //     const url = `http://localhost:5000/myitem?email=${email}`;
-    //     try{
-    //         const {data} = await axiosPrivate.get(url);
-    //         setItems(data);
-    //     }
-    //     catch (error) {
-    //         console.log(error.message);
-    //         if(error.response.status === 401 || error.response.status === 403) {
-    //             signOut(auth);
-    //             navigate('/login');
-    //         }
-    //     }
-    // };
-    // getItems();
+    
+    const [user] = useAuthState(auth);
+    const [items, setItems] = useState([]);
+    useEffect (() => {
+        const email = user.email;
+        const url = `http://localhost:5000/myitem?email=${email}`;
+        fetch(url)
+        .then(res => res.json())
+        .then(data => setItems(data))
         
-    // }, [user]);
-
+        
+    }, [user]);
+    
     return (
-        <div>
-            <h2>My Items</h2>
-        </div>
+        <div className='text-center mt-5 items-container'>
+        {
+            items.map(item =>
+                <InventoryShow
+                key={item._id}
+                item={item}
+                ></InventoryShow>
+                
+            )
+        }
+        </div> 
+        
     );
 };
 
 export default MyItems;
+
+
+

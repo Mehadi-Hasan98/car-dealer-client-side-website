@@ -4,33 +4,13 @@ import { useForm } from "react-hook-form";
 import { toast } from 'react-toastify';
 import auth from '../../firebase.init';
 
+
 const AddItem = () => {
-    const { register, handleSubmit } = useForm();
-    // const navigate = useNavigate();
+    const { register, handleSubmit, reset } = useForm();
     const [user] = useAuthState(auth);
 
 
     const onSubmit = data =>{
-    // const addItem = {
-    //   id: data._id,
-    //   supplier: data.supplier,
-    //   price: data.price,
-    //   description: data.description,
-    //   image: data.img,
-    //   quantity: data.quantity,
-    //   name: data.name,
-    //   email: user.email
-    // }
-
-    // axios.post("http//localhost:5000/myitem", addItem)
-    // .then((response) => {
-    //   const {data} = response;
-    //   if(data.insertedId) {
-    //     toast("Your item has been added");
-    //   }
-    //   reset();
-    // })
-
     const url = `http://localhost:5000/item`;
     fetch(url, {
         method: 'POST',
@@ -44,19 +24,21 @@ const AddItem = () => {
     .then(result => 
       console.log(result))
       toast("Item added successfully");
-    
+      reset();
   }
   
     return (
-        <div className='w-50 mx-auto mt-5'>
+        <div className='w-50 mx-auto mt-5 text-center'>
             <h2>Please add an item</h2>
             <form className='d-flex flex-column' onSubmit={handleSubmit(onSubmit)}>
       <input className='mb-2' placeholder='Name' {...register("name", { required: true, maxLength: 20 })} />
-      <input className='mb-2' placeholder='Supplier' {...register("name", { required: true, maxLength: 20 })} />
+      <input className='mb-2' placeholder='Supplier' {...register("supplier", { required: true, maxLength: 20 })} />
       <textarea className='mb-2' placeholder='Description' {...register("description")} />
       <input className='mb-2' placeholder='Price' type="number" {...register("price")} />
+      <input className='mb-2' placeholder='quantity' type="number" {...register("quantity")} />
       <input className='mb-2' placeholder='Photo URL' type="text" {...register("img")} />
-      <input className='mb-2' type="email" value={user?.email} name="email" id="" placeholder='Your Email Address' required/>
+      <input className='mb-2' placeholder='Email' type="email" value={user.email} {...register("email")} />
+
       <input type="submit" value="Add New Item" />
     </form>
         </div>

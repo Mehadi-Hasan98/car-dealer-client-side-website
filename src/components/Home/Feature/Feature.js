@@ -12,7 +12,7 @@ const Feature = () => {
         <div className='text-center'>
             <p>Check out our recent cars</p>
             <h2 className='mb-4'>Feature Cars</h2>
-            <div className='d-flex ms-4 me-4 features-container'>
+            <div className='ms-4 me-4 features-container'>
             <Card className='mx-auto' style={{ width: '18rem' }}>
   <Card.Img variant="top" src={feature1} />
   <Card.Body>

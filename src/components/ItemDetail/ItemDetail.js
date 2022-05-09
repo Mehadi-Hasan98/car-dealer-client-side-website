@@ -26,12 +26,13 @@ const ItemDetail = () => {
     <ListGroupItem>Supplier: {item.supplier}</ListGroupItem>
   </ListGroup>
   <Card.Body>
-  <button className='btn btn-success mx-3'>Update</button>
-    <button className='btn btn-primary'>Delivered</button>
+    <button className='btn btn-primary ms-2'>Delivered</button>
   </Card.Body>
 </Card>
-<button className='btn btn-primary mt-4' onClick={()=> navigateToInventory()}>Manage Inventories</button>
-        <div className='mt-5'>
+    <div className='text-center mt-4'>
+    <button className='btn btn-primary mt-4' onClick={()=> navigateToInventory()}>Manage Inventories</button>
+    </div>
+        <div className='mt-5 text-center'>
             <input type="text" placeholder='Enter Quantity Number'/>
             <button style={{bgcolor: "blue"}} className='ms-3'>Restock</button>
         </div>

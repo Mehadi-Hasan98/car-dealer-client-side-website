@@ -1,19 +1,16 @@
-card img{
-    height: 190px;
-}
-
-.features-container{
+.about-info{
     display: flex;
 }
+
 @media only screen and (max-width: 576px){
-    .features-container{
+    .about-info{
         flex-direction: column;
     }
    
 }
 
 @media only screen and (min-width: 577px) and (max-width: 992px) {
-    .features-container{
+    .about-info{
         flex-direction: column;
     }
 }
