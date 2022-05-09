@@ -7,13 +7,14 @@ const MyItems = () => {
     
     const [user] = useAuthState(auth);
     const [items, setItems] = useState([]);
+    // const [refresh, setRefresh] = useState(false);
     useEffect (() => {
         const email = user.email;
         const url = `https://fierce-eyrie-19120.herokuapp.com/myitem?email=${email}`;
         fetch(url)
         .then(res => res.json())
         .then(data => setItems(data))
-        
+        // setRefresh(!refresh);
         
     }, [user]);
     

@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import Loading from '../../Shared/Loading/Loading';
 import './Item.css';
 
 const Item = ({item}) => {
@@ -8,7 +9,13 @@ const Item = ({item}) => {
     const navigateToItemDetail = id => {
         navigate(`/item/${id}`)
     }
-    
+    const [loading, setLoading] = useState(true);
+    if(!loading){
+      <Loading></Loading>
+    }
+    else{
+      setLoading(false);
+    }
     return (
         <div className='item'>
             <img src={img} alt="" />

@@ -27,8 +27,7 @@ const Feature = () => {
   <Card.Body>
     <Card.Title>BMW</Card.Title>
     <Card.Text>
-      Some quick example text to build on the card title and make up the bulk of
-      the card's content.
+      BMW 2 series coupe
     </Card.Text>
   </Card.Body>
 </Card>
@@ -37,8 +36,7 @@ const Feature = () => {
   <Card.Body>
     <Card.Title>LAMBORGHINI</Card.Title>
     <Card.Text>
-      Some quick example text to build on the card title and make up the bulk of
-      the card's content.
+     Lamborghini Avendator
     </Card.Text>
   </Card.Body>
 </Card>
@@ -47,8 +45,7 @@ const Feature = () => {
   <Card.Body>
     <Card.Title>RANGE ROVER</Card.Title>
     <Card.Text>
-      Some quick example text to build on the card title and make up the bulk of
-      the card's content.
+      Range Rover Sport
     </Card.Text>
   </Card.Body>
 </Card>

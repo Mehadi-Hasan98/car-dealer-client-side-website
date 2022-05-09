@@ -1,10 +1,17 @@
 import React, { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import Loading from '../../Shared/Loading/Loading';
 import Item from '../Item/Item';
 import './Items.css';
 
 const Items = () => {
     const [items, setItems] = useState([]);
+    const [loading, setLoading] = useState(true);
+    if(!loading){
+      <Loading></Loading>
+    }
+    else{
+      setLoading(false);
+    }
 
     useEffect( () =>{
         fetch('https://fierce-eyrie-19120.herokuapp.com/item')

@@ -1,11 +1,9 @@
-// import React, { useState } from 'react';
 import useManageInventory from '../../hooks/useManageInventory';
 
 const InventoryShow = ({item}) => {
     const [items, setItems] = useManageInventory();
-    // const [Refresh, setRefresh] = React.useState(false);
     const handleDelete = id =>{
-        // setRefresh(!Refresh);
+        
         const proceed = window.confirm('Are You Sure?');
         if(proceed){
             const url = `https://fierce-eyrie-19120.herokuapp.com/item/${id}`;
@@ -16,6 +14,7 @@ const InventoryShow = ({item}) => {
             .then(data=> {
                 const remaining = items.filter(item => item._id !== id);
                 setItems(remaining);
+               
             })
         }
     }

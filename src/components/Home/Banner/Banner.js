@@ -1,9 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Carousel } from 'react-bootstrap';
 import car1 from '../../../images/Banner/car (1).jpg';
 import car2 from '../../../images/Banner/car2.jpg';
 import car3 from '../../../images/Banner/car3.jpg';
+import Loading from '../../Shared/Loading/Loading';
 const Banner = () => {
+  const [loading, setLoading] = useState(true);
+  if(!loading){
+    <Loading></Loading>
+  }
+  else{
+    setLoading(false);
+  }
     return (
         <div>
             <Carousel>
