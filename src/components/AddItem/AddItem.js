@@ -11,7 +11,7 @@ const AddItem = () => {
 
 
     const onSubmit = data =>{
-    const url = `http://localhost:5000/item`;
+    const url = `https://fierce-eyrie-19120.herokuapp.com/item`;
     fetch(url, {
         method: 'POST',
         headers: {
@@ -29,7 +29,7 @@ const AddItem = () => {
   
     return (
         <div className='w-50 mx-auto mt-5 text-center'>
-            <h2>Please add an item</h2>
+            <h2 className='mb-3' style={{color: "coral"}}>Please add an item</h2>
             <form className='d-flex flex-column' onSubmit={handleSubmit(onSubmit)}>
       <input className='mb-2' placeholder='Name' {...register("name", { required: true, maxLength: 20 })} />
       <input className='mb-2' placeholder='Supplier' {...register("supplier", { required: true, maxLength: 20 })} />

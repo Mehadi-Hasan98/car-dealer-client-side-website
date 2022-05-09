@@ -9,7 +9,7 @@ const UpdateInventory = () => {
         const newProduct = {...product, quantity: newQuantity}
         setProduct(newProduct)
         if(newQuantity > -1){
-            const url = `http://localhost:5000/Inventory/${id}`
+            const url = `https://fierce-eyrie-19120.herokuapp.com/Inventory/${id}`
             fetch(url, {
                 method: 'PUT',
                 headers: {

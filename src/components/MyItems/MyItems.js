@@ -9,7 +9,7 @@ const MyItems = () => {
     const [items, setItems] = useState([]);
     useEffect (() => {
         const email = user.email;
-        const url = `http://localhost:5000/myitem?email=${email}`;
+        const url = `https://fierce-eyrie-19120.herokuapp.com/myitem?email=${email}`;
         fetch(url)
         .then(res => res.json())
         .then(data => setItems(data))
@@ -18,8 +18,10 @@ const MyItems = () => {
     }, [user]);
     
     return (
-        <div className='text-center mt-5 items-container'>
-        {
+        <div className='text-center mt-5'>
+            <h2  style={{color: "coral"}} className='mb-5'>My Items</h2>
+       <div className='items-container'>
+       {
             items.map(item =>
                 <InventoryShow
                 key={item._id}
@@ -28,6 +30,7 @@ const MyItems = () => {
                 
             )
         }
+       </div>
         </div> 
         
     );

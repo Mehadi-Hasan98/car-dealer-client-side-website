@@ -12,6 +12,12 @@ const firebaseConfig = {
   storageBucket: "car-dealer-d2379.appspot.com",
   messagingSenderId: "981498325548",
   appId: "1:981498325548:web:b38d6c29e503ff1de7bf89"
+  // apiKey:process.env.REACT_APP_apiKey,
+  // authDomain:process.env.REACT_APP_authDomain,
+  // projectId:process.env.REACT_APP_projectId,
+  // storageBucket:process.env.REACT_APP_storageBucket,
+  // messagingSenderId:process.env.REACT_APP_messagingSenderId,
+  // appId:process.env.REACT_APP_appId,
 };
 
 // Initialize Firebase

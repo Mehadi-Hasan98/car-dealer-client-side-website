@@ -1,15 +1,17 @@
 # Car Dealer
+# Short description about website
+- This a car inventory website. Here you can see our whole inventories. we used reactjs, react-router, nodejs, mongodb for our website. you can log in with your email address and can add your own product using product details. your access token will be saved in our local storage. After logout you won't be able to see our protected routes. 
 
-[Car Dealer live site link](https://github.com/facebook/create-react-app).
+[Car Dealer live site link](https://car-dealer-d2379.web.app/home)
 
 ## Website Details
 
-- This is a inventory website
-- 
--
--
--
--
+- This is an inventory website
+- This website is used by react.js , react-router, nodejs, mongodb etc
+- All data is secured in mongodb
+- In this website you can see my inventories and you can add your own products using your email address
+- using jwt token
+- There are some protected routes for logged in users
 
 ### `npm start`
 

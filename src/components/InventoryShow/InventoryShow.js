@@ -8,7 +8,7 @@ const InventoryShow = ({item}) => {
         // setRefresh(!Refresh);
         const proceed = window.confirm('Are You Sure?');
         if(proceed){
-            const url = `http://localhost:5000/item/${id}`;
+            const url = `https://fierce-eyrie-19120.herokuapp.com/item/${id}`;
             fetch(url, {
                 method: 'DELETE',
             })

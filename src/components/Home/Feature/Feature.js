@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Card } from 'react-bootstrap';
+import {Card} from 'react-bootstrap';
 import feature1 from '../../../images/Feature/feature1.png';
 import feature2 from '../../../images/Feature/feature2.png';
 import feature3 from '../../../images/Feature/feature3.png';
